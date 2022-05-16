@@ -1,0 +1,36 @@
+---
+cidr_block: 10.10.0.0
+mask_bits: 8
+availability_zones:
+  - a
+  - b
+  - c
+environments:
+  - prod
+  - pre
+  - perf
+  - sit
+  - dev
+  - sandbox
+  - ci
+region: sa-east-1
+network:
+  subnet_mask_bits: 20
+  subnets:
+    - name: public
+      enable: true
+      type: public
+    - name: private
+      enable: true
+      type: private
+    - name: lambda
+      enable: true
+      type: private
+    - name: database
+      enable: true
+      type: private
+      subnet_mask_bits: 24
+    - name: elasticache
+      enable: true
+      type: private
+      subnet_mask_bits: 24

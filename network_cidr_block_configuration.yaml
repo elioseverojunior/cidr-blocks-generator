@@ -1,0 +1,149 @@
+ci:
+  database_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.100.0/24, sa-east-1b: 10.10.101.0/24,
+      sa-east-1c: 10.10.102.0/24}
+    network_mask_bit_end: 102
+    network_mask_bit_init: 100
+  elasticache_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.103.0/24, sa-east-1b: 10.10.104.0/24,
+      sa-east-1c: 10.10.105.0/24}
+    network_mask_bit_end: 105
+    network_mask_bit_init: 103
+  lambda_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.97.0/20, sa-east-1b: 10.10.98.0/20, sa-east-1c: 10.10.99.0/20}
+    network_mask_bit_end: 99
+    network_mask_bit_init: 97
+  private_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.94.0/20, sa-east-1b: 10.10.95.0/20, sa-east-1c: 10.10.96.0/20}
+    network_mask_bit_end: 96
+    network_mask_bit_init: 94
+  public_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.91.0/20, sa-east-1b: 10.10.92.0/20, sa-east-1c: 10.10.93.0/20}
+    network_mask_bit_end: 93
+    network_mask_bit_init: 91
+dev:
+  database_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.70.0/24, sa-east-1b: 10.10.71.0/24, sa-east-1c: 10.10.72.0/24}
+    network_mask_bit_end: 72
+    network_mask_bit_init: 70
+  elasticache_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.73.0/24, sa-east-1b: 10.10.74.0/24, sa-east-1c: 10.10.75.0/24}
+    network_mask_bit_end: 75
+    network_mask_bit_init: 73
+  lambda_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.67.0/20, sa-east-1b: 10.10.68.0/20, sa-east-1c: 10.10.69.0/20}
+    network_mask_bit_end: 69
+    network_mask_bit_init: 67
+  private_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.64.0/20, sa-east-1b: 10.10.65.0/20, sa-east-1c: 10.10.66.0/20}
+    network_mask_bit_end: 66
+    network_mask_bit_init: 64
+  public_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.61.0/20, sa-east-1b: 10.10.62.0/20, sa-east-1c: 10.10.63.0/20}
+    network_mask_bit_end: 63
+    network_mask_bit_init: 61
+perf:
+  database_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.40.0/24, sa-east-1b: 10.10.41.0/24, sa-east-1c: 10.10.42.0/24}
+    network_mask_bit_end: 42
+    network_mask_bit_init: 40
+  elasticache_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.43.0/24, sa-east-1b: 10.10.44.0/24, sa-east-1c: 10.10.45.0/24}
+    network_mask_bit_end: 45
+    network_mask_bit_init: 43
+  lambda_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.37.0/20, sa-east-1b: 10.10.38.0/20, sa-east-1c: 10.10.39.0/20}
+    network_mask_bit_end: 39
+    network_mask_bit_init: 37
+  private_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.34.0/20, sa-east-1b: 10.10.35.0/20, sa-east-1c: 10.10.36.0/20}
+    network_mask_bit_end: 36
+    network_mask_bit_init: 34
+  public_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.31.0/20, sa-east-1b: 10.10.32.0/20, sa-east-1c: 10.10.33.0/20}
+    network_mask_bit_end: 33
+    network_mask_bit_init: 31
+pre:
+  database_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.25.0/24, sa-east-1b: 10.10.26.0/24, sa-east-1c: 10.10.27.0/24}
+    network_mask_bit_end: 27
+    network_mask_bit_init: 25
+  elasticache_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.28.0/24, sa-east-1b: 10.10.29.0/24, sa-east-1c: 10.10.30.0/24}
+    network_mask_bit_end: 30
+    network_mask_bit_init: 28
+  lambda_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.22.0/20, sa-east-1b: 10.10.23.0/20, sa-east-1c: 10.10.24.0/20}
+    network_mask_bit_end: 24
+    network_mask_bit_init: 22
+  private_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.19.0/20, sa-east-1b: 10.10.20.0/20, sa-east-1c: 10.10.21.0/20}
+    network_mask_bit_end: 21
+    network_mask_bit_init: 19
+  public_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.16.0/20, sa-east-1b: 10.10.17.0/20, sa-east-1c: 10.10.18.0/20}
+    network_mask_bit_end: 18
+    network_mask_bit_init: 16
+prod:
+  database_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.10.0/24, sa-east-1b: 10.10.11.0/24, sa-east-1c: 10.10.12.0/24}
+    network_mask_bit_end: 12
+    network_mask_bit_init: 10
+  elasticache_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.13.0/24, sa-east-1b: 10.10.14.0/24, sa-east-1c: 10.10.15.0/24}
+    network_mask_bit_end: 15
+    network_mask_bit_init: 13
+  lambda_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.7.0/20, sa-east-1b: 10.10.8.0/20, sa-east-1c: 10.10.9.0/20}
+    network_mask_bit_end: 9
+    network_mask_bit_init: 7
+  private_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.4.0/20, sa-east-1b: 10.10.5.0/20, sa-east-1c: 10.10.6.0/20}
+    network_mask_bit_end: 6
+    network_mask_bit_init: 4
+  public_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.1.0/20, sa-east-1b: 10.10.2.0/20, sa-east-1c: 10.10.3.0/20}
+    network_mask_bit_end: 3
+    network_mask_bit_init: 1
+sandbox:
+  database_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.85.0/24, sa-east-1b: 10.10.86.0/24, sa-east-1c: 10.10.87.0/24}
+    network_mask_bit_end: 87
+    network_mask_bit_init: 85
+  elasticache_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.88.0/24, sa-east-1b: 10.10.89.0/24, sa-east-1c: 10.10.90.0/24}
+    network_mask_bit_end: 90
+    network_mask_bit_init: 88
+  lambda_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.82.0/20, sa-east-1b: 10.10.83.0/20, sa-east-1c: 10.10.84.0/20}
+    network_mask_bit_end: 84
+    network_mask_bit_init: 82
+  private_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.79.0/20, sa-east-1b: 10.10.80.0/20, sa-east-1c: 10.10.81.0/20}
+    network_mask_bit_end: 81
+    network_mask_bit_init: 79
+  public_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.76.0/20, sa-east-1b: 10.10.77.0/20, sa-east-1c: 10.10.78.0/20}
+    network_mask_bit_end: 78
+    network_mask_bit_init: 76
+sit:
+  database_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.55.0/24, sa-east-1b: 10.10.56.0/24, sa-east-1c: 10.10.57.0/24}
+    network_mask_bit_end: 57
+    network_mask_bit_init: 55
+  elasticache_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.58.0/24, sa-east-1b: 10.10.59.0/24, sa-east-1c: 10.10.60.0/24}
+    network_mask_bit_end: 60
+    network_mask_bit_init: 58
+  lambda_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.52.0/20, sa-east-1b: 10.10.53.0/20, sa-east-1c: 10.10.54.0/20}
+    network_mask_bit_end: 54
+    network_mask_bit_init: 52
+  private_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.49.0/20, sa-east-1b: 10.10.50.0/20, sa-east-1c: 10.10.51.0/20}
+    network_mask_bit_end: 51
+    network_mask_bit_init: 49
+  public_subnet:
+    network_cidr_blocks: {sa-east-1a: 10.10.46.0/20, sa-east-1b: 10.10.47.0/20, sa-east-1c: 10.10.48.0/20}
+    network_mask_bit_end: 48
+    network_mask_bit_init: 46
